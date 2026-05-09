@@ -1,0 +1,9 @@
+item,qty,unit,material_or_spec,estimated_cost_usd,notes
+Frame hardwood blank,1,ea,"maple, cherry, walnut, or similar clear hardwood, 0.75 in nominal",45,"Avoid knots and short grain through arms"
+Soundboard panel,1,ea,"spruce, cedar, or birch aircraft ply, 0.125-0.160 in",25,"Prototype thickness to be validated by deflection and tone"
+Back or rim spacer stock,1,set,"hardwood or plywood strips",15,"Supports soundbox depth if boxed body is selected"
+Zither tuning pins,10,ea,"0.197 in or compatible lyre/harp pin",18,"Pilot-hole fit and torque must be tested on scrap"
+Bridge and nut stock,2,ea,"hard maple, bone, or dense hardwood",8,"Round contact points to reduce string breakage"
+String set,1,set,"nylon or fluorocarbon monofilament gauges TBD",35,"Gauge schedule must be calculated and tested"
+Adhesive,1,lot,"wood glue suitable for instrument joints",8,"Use fresh adhesive and full clamp coverage"
+Finish,1,lot,"shellac, oil-varnish, or waterborne clear finish",15,"Do not finish string contact surfaces until fit is final"

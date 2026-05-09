@@ -1,0 +1,7 @@
+part,qty,rough_dimensions_in,final_dimensions_in,material,grain_or_orientation,operation,notes
+Left arm,1,"1.0 x 2.0 x 22.0","0.75 x profile x 21.0","clear hardwood","grain follows arm curve","bandsaw/CNC profile then rasp/sand","Leave extra at yoke joint until fitted"
+Right arm,1,"1.0 x 2.0 x 22.0","0.75 x profile x 21.0","clear hardwood","grain follows arm curve","bandsaw/CNC profile then rasp/sand","Mirror left arm"
+Crossbar/yoke,1,"1.0 x 1.5 x 16.0","0.75 x 1.0 x fitted length","clear hardwood","long grain end to end","drill pin row after layout verification","No short-grain load path"
+Soundboard,1,"0.160 x 13.0 x 18.0","0.125-0.160 x body profile","spruce/cedar/ply","long grain vertical","template trim and brace if needed","Final thickness TBD"
+Bridge,1,"0.5 x 0.5 x 12.0","profile TBD","hard maple or bone","long grain along string row","shape, slot, polish","Confirm spacing before slots"
+Nut,1,"0.375 x 0.5 x 12.0","profile TBD","hard maple or bone","long grain along string row","shape, slot, polish","Slots must match final gauges"
