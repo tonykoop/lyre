@@ -1,0 +1,6 @@
+item,required_spec,search_terms,supplier_candidates,date_checked,unit_price_usd,lead_time,substitution_risk,notes
+Zither pins,"10 matching pins with compatible wrench and pilot recommendations","zither tuning pins harp lyre 0.197 inch","music hardware suppliers; luthier suppliers",TBD,TBD,TBD,Medium,"Pin diameter and wood species affect holding torque"
+Monofilament strings,"nylon or fluorocarbon gauges from calculated schedule","nylon monofilament harp strings fluorocarbon music string","harp string suppliers; fishing leader only if specs are documented",TBD,TBD,TBD,High,"Density and breaking strength must be known"
+Soundboard stock,"quarter-sawn softwood or stable thin ply","spruce soundboard blank cedar soundboard birch aircraft plywood","luthier suppliers; specialty plywood suppliers",TBD,TBD,TBD,Medium,"Tone and deflection vary by material"
+Frame hardwood,"clear straight-grain hardwood, 0.75 in nominal or thicker","instrument hardwood maple cherry walnut blank","local hardwood dealer; luthier tonewood supplier",TBD,TBD,TBD,Low,"Avoid runout at arms"
+Bridge/nut stock,"dense wear-resistant string contact material","hard maple bridge blank bone nut blank","luthier suppliers",TBD,TBD,TBD,Low,"Must polish smooth to prevent string cuts"

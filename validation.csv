@@ -1,0 +1,7 @@
+check_id,area,target,method,tolerance,measured,result,action
+VAL-001,String tuning,"C4 through E5 target pitches at A4=440","chromatic tuner after 24 hour settle","+/- 10 cents",TBD,TBD,"Adjust gauge, scale length, or bridge compensation"
+VAL-002,String safety,"all strings below 70 percent estimated break","calculate from supplier density and break strength","<=70 percent",TBD,TBD,"Change gauge/material before full pitch"
+VAL-003,Frame deflection,"no permanent yoke or arm movement under full tension","measure before stringing and after 24 hours","<=0.030 in movement",TBD,TBD,"Increase section, add lamination, or reduce total tension"
+VAL-004,Tuning pin hold,"pins hold pitch through three retune cycles","mark pin angle and pitch drift","<=5 cents drift per hour",TBD,TBD,"Revise pilot hole or pin spec"
+VAL-005,Ergonomics,"comfortable lap/bench playing reach","player mockup photos and reach notes","no wrist strain",TBD,TBD,"Revise body width/string fan"
+VAL-006,Finish clearance,"finish does not bind pins or string slots","dry fit after finish cure","free movement",TBD,TBD,"Mask or rework contact areas"

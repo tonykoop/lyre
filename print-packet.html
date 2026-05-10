@@ -1,0 +1,404 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Lyre Build Packet</title><style>
+body { font-family: Arial, sans-serif; color: #111; line-height: 1.35; max-width: 900px; margin: 32px auto; }
+h1 { font-size: 28px; border-bottom: 2px solid #222; padding-bottom: 6px; }
+h2 { font-size: 22px; margin-top: 28px; }
+h3 { font-size: 18px; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 12px; }
+th, td { border: 1px solid #888; padding: 6px; vertical-align: top; }
+th { background: #e8eef8; }
+pre { white-space: pre-wrap; background: #f5f5f5; padding: 10px; border: 1px solid #ddd; }
+.page-break { page-break-before: always; break-before: page; }
+@media print { body { margin: 0.5in; max-width: none; } a { color: #111; } }
+</style></head><body>
+<h1>Lyre Build Packet Print Packet</h1>
+
+<p>Generated: 2026-05-09</p>
+<p>Packet folder: `/tmp/lyre-codex-gina-r2-build-packet`</p>
+
+<h2>File Map</h2>
+
+<table>
+<tr><th>File</th><th>Purpose</th></tr>
+<tr><td>`design.md`</td><td>Project intent, catalog metadata, assumptions, and validation plan.</td></tr>
+<tr><td>`bom.csv`</td><td>Starter bill of materials with part categories, quantities, drawing refs, and notes.</td></tr>
+<tr><td>`sourcing.csv`</td><td>Supplier/search tracker with specs, price/date fields, lead time, substitutes, and risks.</td></tr>
+<tr><td>`cut-list.csv`</td><td>Rough/final stock sizes, material, grain/orientation, operations, yield, and offcuts.</td></tr>
+<tr><td>`drawing-brief.md`</td><td>Manufacturing drawing and technical product sketch brief.</td></tr>
+<tr><td>`assembly-manual.md`</td><td>Shop-facing sequence, tools, fixtures, safety, tuning, finishing, and maintenance notes.</td></tr>
+<tr><td>`validation.csv`</td><td>Target/measured values, tolerance, environment, result, and tuning/build action log.</td></tr>
+<tr><td>`supplier-rfq.md`</td><td>Supplier email/request-for-quote starter.</td></tr>
+<tr><td>`visual-bom-brief.md`</td><td>Art direction for an image-forward visual BOM.</td></tr>
+<tr><td>`wolfram-starter.wl`</td><td>Wolfram starter for physics, optimization, visualization, and validation.</td></tr>
+<tr><td>`README.md`</td><td>Project artifact.</td></tr>
+<tr><td>`photo-shotlist.md`</td><td>Project artifact.</td></tr>
+<tr><td>`risks.md`</td><td>Project artifact.</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>design.md</h2>
+
+<p>Project intent, catalog metadata, assumptions, and validation plan.</p>
+
+<h1>Lyre Design</h1>
+
+<h2>Intent</h2>
+
+<p>Create a small bench-buildable lyre packet that can move from concept to a</p>
+<p>first shop prototype without hiding the important string-load unknowns. The</p>
+<p>baseline is a compact 10-string plucked instrument with a flat soundboard,</p>
+<p>two arms, a crossbar/yoke, and individual tuning pins.</p>
+
+<h2>Readiness</h2>
+
+<p>L2 scaffold. This is suitable for design review, sourcing review, and first CAD</p>
+<p>layout. It is not ready for unattended fabrication.</p>
+
+<h2>Governing Model</h2>
+
+<p>Strings use the Mersenne-Taylor relationship:</p>
+
+<pre><code>
+f = (1 / (2 L)) * sqrt(T / mu)
+mu = density * pi * (diameter / 2)^2
+</code></pre>
+
+<p>Use A4 = 440 Hz equal temperament for targets. Treat all string tensions as</p>
+<p>first-order estimates until the actual string material, gauge, and measured</p>
+<p>density are recorded.</p>
+
+<h2>Baseline Assumptions</h2>
+
+<table>
+<tr><th>Parameter</th><th>Baseline</th><th>Notes</th></tr>
+<tr><td>String count</td><td>10</td><td>Diatonic C4-D4-E4-F4-G4-A4-B4-C5-D5-E5</td></tr>
+<tr><td>Scale length</td><td>21 in nominal</td><td>May be fanned 18-23 in for ergonomics and tension</td></tr>
+<tr><td>String material</td><td>Nylon or fluorocarbon</td><td>Gut is possible but not the first prototype default</td></tr>
+<tr><td>Soundboard</td><td>0.125-0.160 in spruce, cedar, or birch ply</td><td>Final thickness requires tap and deflection checks</td></tr>
+<tr><td>Frame stock</td><td>0.75 in hardwood</td><td>Grain must run continuously through arms where possible</td></tr>
+<tr><td>Tuning hardware</td><td>Zither pins</td><td>Pilot holes and pin torque need validation</td></tr>
+<tr><td>Target total tension</td><td>80-120 lbf</td><td>Design frame with margin before stringing</td></tr>
+</table>
+
+<h2>Tension Safety Notes</h2>
+
+<ul>
+<li>Keep the first prototype below 70 percent of estimated breaking load for all</li>
+</ul>
+<p>  treble monofilament strings.</p>
+<ul>
+<li>Confirm the crossbar/yoke is not loaded in short grain.</li>
+<li>Bring strings to pitch gradually, alternating across the frame.</li>
+<li>Stop the build if the soundboard crowns, the yoke twists, or tuning pins</li>
+</ul>
+<p>  creep under static load.</p>
+
+<h2>Known Gaps</h2>
+
+<ul>
+<li>No measured string-gauge schedule yet.</li>
+<li>No CAD frame deflection check yet.</li>
+<li>No bridge downbearing measurement yet.</li>
+<li>No supplier price or stock verification yet.</li>
+<li>No prototype tuning data.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>bom.csv</h2>
+
+<p>Starter bill of materials with part categories, quantities, drawing refs, and notes.</p>
+
+<table>
+<tr><th>item</th><th>qty</th><th>unit</th><th>material_or_spec</th><th>estimated_cost_usd</th><th>notes</th></tr>
+<tr><td>Frame hardwood blank</td><td>1</td><td>ea</td><td>maple, cherry, walnut, or similar clear hardwood, 0.75 in nominal</td><td>45</td><td>Avoid knots and short grain through arms</td></tr>
+<tr><td>Soundboard panel</td><td>1</td><td>ea</td><td>spruce, cedar, or birch aircraft ply, 0.125-0.160 in</td><td>25</td><td>Prototype thickness to be validated by deflection and tone</td></tr>
+<tr><td>Back or rim spacer stock</td><td>1</td><td>set</td><td>hardwood or plywood strips</td><td>15</td><td>Supports soundbox depth if boxed body is selected</td></tr>
+<tr><td>Zither tuning pins</td><td>10</td><td>ea</td><td>0.197 in or compatible lyre/harp pin</td><td>18</td><td>Pilot-hole fit and torque must be tested on scrap</td></tr>
+<tr><td>Bridge and nut stock</td><td>2</td><td>ea</td><td>hard maple, bone, or dense hardwood</td><td>8</td><td>Round contact points to reduce string breakage</td></tr>
+<tr><td>String set</td><td>1</td><td>set</td><td>nylon or fluorocarbon monofilament gauges TBD</td><td>35</td><td>Gauge schedule must be calculated and tested</td></tr>
+<tr><td>Adhesive</td><td>1</td><td>lot</td><td>wood glue suitable for instrument joints</td><td>8</td><td>Use fresh adhesive and full clamp coverage</td></tr>
+<tr><td>Finish</td><td>1</td><td>lot</td><td>shellac, oil-varnish, or waterborne clear finish</td><td>15</td><td>Do not finish string contact surfaces until fit is final</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>sourcing.csv</h2>
+
+<p>Supplier/search tracker with specs, price/date fields, lead time, substitutes, and risks.</p>
+
+<table>
+<tr><th>item</th><th>required_spec</th><th>search_terms</th><th>supplier_candidates</th><th>date_checked</th><th>unit_price_usd</th><th>lead_time</th><th>substitution_risk</th><th>notes</th></tr>
+<tr><td>Zither pins</td><td>10 matching pins with compatible wrench and pilot recommendations</td><td>zither tuning pins harp lyre 0.197 inch</td><td>music hardware suppliers; luthier suppliers</td><td>TBD</td><td>TBD</td><td>TBD</td><td>Medium</td><td>Pin diameter and wood species affect holding torque</td></tr>
+<tr><td>Monofilament strings</td><td>nylon or fluorocarbon gauges from calculated schedule</td><td>nylon monofilament harp strings fluorocarbon music string</td><td>harp string suppliers; fishing leader only if specs are documented</td><td>TBD</td><td>TBD</td><td>TBD</td><td>High</td><td>Density and breaking strength must be known</td></tr>
+<tr><td>Soundboard stock</td><td>quarter-sawn softwood or stable thin ply</td><td>spruce soundboard blank cedar soundboard birch aircraft plywood</td><td>luthier suppliers; specialty plywood suppliers</td><td>TBD</td><td>TBD</td><td>TBD</td><td>Medium</td><td>Tone and deflection vary by material</td></tr>
+<tr><td>Frame hardwood</td><td>clear straight-grain hardwood, 0.75 in nominal or thicker</td><td>instrument hardwood maple cherry walnut blank</td><td>local hardwood dealer; luthier tonewood supplier</td><td>TBD</td><td>TBD</td><td>TBD</td><td>Low</td><td>Avoid runout at arms</td></tr>
+<tr><td>Bridge/nut stock</td><td>dense wear-resistant string contact material</td><td>hard maple bridge blank bone nut blank</td><td>luthier suppliers</td><td>TBD</td><td>TBD</td><td>TBD</td><td>Low</td><td>Must polish smooth to prevent string cuts</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>cut-list.csv</h2>
+
+<p>Rough/final stock sizes, material, grain/orientation, operations, yield, and offcuts.</p>
+
+<table>
+<tr><th>part</th><th>qty</th><th>rough_dimensions_in</th><th>final_dimensions_in</th><th>material</th><th>grain_or_orientation</th><th>operation</th><th>notes</th></tr>
+<tr><td>Left arm</td><td>1</td><td>1.0 x 2.0 x 22.0</td><td>0.75 x profile x 21.0</td><td>clear hardwood</td><td>grain follows arm curve</td><td>bandsaw/CNC profile then rasp/sand</td><td>Leave extra at yoke joint until fitted</td></tr>
+<tr><td>Right arm</td><td>1</td><td>1.0 x 2.0 x 22.0</td><td>0.75 x profile x 21.0</td><td>clear hardwood</td><td>grain follows arm curve</td><td>bandsaw/CNC profile then rasp/sand</td><td>Mirror left arm</td></tr>
+<tr><td>Crossbar/yoke</td><td>1</td><td>1.0 x 1.5 x 16.0</td><td>0.75 x 1.0 x fitted length</td><td>clear hardwood</td><td>long grain end to end</td><td>drill pin row after layout verification</td><td>No short-grain load path</td></tr>
+<tr><td>Soundboard</td><td>1</td><td>0.160 x 13.0 x 18.0</td><td>0.125-0.160 x body profile</td><td>spruce/cedar/ply</td><td>long grain vertical</td><td>template trim and brace if needed</td><td>Final thickness TBD</td></tr>
+<tr><td>Bridge</td><td>1</td><td>0.5 x 0.5 x 12.0</td><td>profile TBD</td><td>hard maple or bone</td><td>long grain along string row</td><td>shape, slot, polish</td><td>Confirm spacing before slots</td></tr>
+<tr><td>Nut</td><td>1</td><td>0.375 x 0.5 x 12.0</td><td>profile TBD</td><td>hard maple or bone</td><td>long grain along string row</td><td>shape, slot, polish</td><td>Slots must match final gauges</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>drawing-brief.md</h2>
+
+<p>Manufacturing drawing and technical product sketch brief.</p>
+
+<h1>Lyre Drawing Brief</h1>
+
+<p>Required first drawings:</p>
+
+<ul>
+<li>Full-size front elevation with string fan, bridge, nut, yoke, and pin row.</li>
+<li>Side section through body/soundboard showing bridge height and downbearing.</li>
+<li>Crossbar/yoke detail with pin spacing, pilot diameter, and edge distance.</li>
+<li>Arm joint detail showing grain direction and glue surface.</li>
+</ul>
+
+<p>All drawings should label dimensions in inches, include metric equivalents for</p>
+<p>hardware, and mark TBD dimensions that depend on final string gauges.</p>
+
+<div class="page-break"></div>
+
+<h2>assembly-manual.md</h2>
+
+<p>Shop-facing sequence, tools, fixtures, safety, tuning, finishing, and maintenance notes.</p>
+
+<h1>Lyre Assembly Manual</h1>
+
+<h2>Tools</h2>
+
+<p>Bandsaw or CNC router, drill press, brad-point bits, clamps, rasps/files,</p>
+<p>sanding blocks, tuner, calipers, straightedge, and stringing wrench.</p>
+
+<h2>Build Sequence</h2>
+
+<p>1. Make a full-size layout with string path, bridge, nut, yoke, and pin row.</p>
+<p>2. Cut frame arms and crossbar oversize, keeping grain continuous through the</p>
+<p>   loaded members.</p>
+<p>3. Dry-fit the frame and mark the actual speaking lengths.</p>
+<p>4. Cut and fit the soundboard or soundbox panel.</p>
+<p>5. Glue the frame and soundboard with flat cauls and full clamp support.</p>
+<p>6. Shape and polish the bridge and nut. Do not cut final slots until the gauge</p>
+<p>   schedule is confirmed.</p>
+<p>7. Drill pin pilot holes in scrap first, then in the yoke after torque testing.</p>
+<p>8. Install strings gradually, moving across the set instead of loading one side</p>
+<p>   fully before the other.</p>
+<p>9. Tune in stages over 24 hours and record movement in `validation.csv`.</p>
+
+<h2>Safety</h2>
+
+<p>Wear eye protection when stringing. Stand out of the string plane during first</p>
+<p>pitch-up. If a frame member moves visibly, detune before inspecting.</p>
+
+<div class="page-break"></div>
+
+<h2>validation.csv</h2>
+
+<p>Target/measured values, tolerance, environment, result, and tuning/build action log.</p>
+
+<table>
+<tr><th>check_id</th><th>area</th><th>target</th><th>method</th><th>tolerance</th><th>measured</th><th>result</th><th>action</th></tr>
+<tr><td>VAL-001</td><td>String tuning</td><td>C4 through E5 target pitches at A4=440</td><td>chromatic tuner after 24 hour settle</td><td>+/- 10 cents</td><td>TBD</td><td>TBD</td><td>Adjust gauge, scale length, or bridge compensation</td></tr>
+<tr><td>VAL-002</td><td>String safety</td><td>all strings below 70 percent estimated break</td><td>calculate from supplier density and break strength</td><td>&lt;=70 percent</td><td>TBD</td><td>TBD</td><td>Change gauge/material before full pitch</td></tr>
+<tr><td>VAL-003</td><td>Frame deflection</td><td>no permanent yoke or arm movement under full tension</td><td>measure before stringing and after 24 hours</td><td>&lt;=0.030 in movement</td><td>TBD</td><td>TBD</td><td>Increase section, add lamination, or reduce total tension</td></tr>
+<tr><td>VAL-004</td><td>Tuning pin hold</td><td>pins hold pitch through three retune cycles</td><td>mark pin angle and pitch drift</td><td>&lt;=5 cents drift per hour</td><td>TBD</td><td>TBD</td><td>Revise pilot hole or pin spec</td></tr>
+<tr><td>VAL-005</td><td>Ergonomics</td><td>comfortable lap/bench playing reach</td><td>player mockup photos and reach notes</td><td>no wrist strain</td><td>TBD</td><td>TBD</td><td>Revise body width/string fan</td></tr>
+<tr><td>VAL-006</td><td>Finish clearance</td><td>finish does not bind pins or string slots</td><td>dry fit after finish cure</td><td>free movement</td><td>TBD</td><td>TBD</td><td>Mask or rework contact areas</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>supplier-rfq.md</h2>
+
+<p>Supplier email/request-for-quote starter.</p>
+
+<h1>Supplier RFQ Draft</h1>
+
+<p>Hello,</p>
+
+<p>I am sourcing parts for a 10-string prototype lyre. Please quote the following</p>
+<p>items or recommend substitutions that meet the same use case:</p>
+
+<ul>
+<li>10 matching zither or harp tuning pins with recommended pilot-hole size.</li>
+<li>Nylon or fluorocarbon monofilament strings suitable for C4 through E5 at</li>
+</ul>
+<p>  approximately 18-23 in speaking length.</p>
+<ul>
+<li>Optional matching tuning wrench.</li>
+</ul>
+
+<p>Please include material specifications, breaking strength or rated tension,</p>
+<p>unit price, minimum order quantity, lead time, and shipping options.</p>
+
+<p>Thank you.</p>
+
+<div class="page-break"></div>
+
+<h2>visual-bom-brief.md</h2>
+
+<p>Art direction for an image-forward visual BOM.</p>
+
+<h1>Visual BOM Brief</h1>
+
+<p>Create a one-page visual BOM with the assembled lyre at top, then callouts for</p>
+<p>frame hardwood, soundboard, tuning pins, strings, bridge, nut, adhesive, and</p>
+<p>finish. Use real photos or CAD renders when available. Mark any concept images</p>
+<p>as placeholders until replaced by shop or supplier images.</p>
+
+<div class="page-break"></div>
+
+<h2>wolfram-starter.wl</h2>
+
+<p>Wolfram starter for physics, optimization, visualization, and validation.</p>
+
+<pre><code>
+(* Lyre string schedule starter. Values are first-pass assumptions. *)
+ClearAll[&quot;Global`*&quot;];
+a4 = 440;
+freqFromMidi[m_] := a4*2^((m - 69)/12);
+stringTension[f_, scaleIn_, linearDensity_] := (2*scaleIn*f)^2*linearDensity;
+percentBreak[scaleIn_, f_, densityLbIn3_, breakPsi_] :=
+  densityLbIn3*4*scaleIn^2*f^2/(breakPsi*386.4)*100;
+
+notes = &lt;|&quot;C4&quot; -&gt; 60, &quot;D4&quot; -&gt; 62, &quot;E4&quot; -&gt; 64, &quot;F4&quot; -&gt; 65, &quot;G4&quot; -&gt; 67,
+  &quot;A4&quot; -&gt; 69, &quot;B4&quot; -&gt; 71, &quot;C5&quot; -&gt; 72, &quot;D5&quot; -&gt; 74, &quot;E5&quot; -&gt; 76|&gt;;
+scaleLengthIn = 21;
+nylonDensityLbIn3 = 0.04155;
+nylonBreakPsi = 44600;
+
+Dataset[
+  KeyValueMap[
+    &lt;|&quot;note&quot; -&gt; #1, &quot;frequencyHz&quot; -&gt; N[freqFromMidi[#2]],
+      &quot;percentBreakIdeal&quot; -&gt; N[percentBreak[scaleLengthIn, freqFromMidi[#2],
+        nylonDensityLbIn3, nylonBreakPsi]]|&gt; &amp;,
+    notes
+  ]
+]
+</code></pre>
+
+<div class="page-break"></div>
+
+<h2>README.md</h2>
+
+<p>Project artifact.</p>
+
+<h1>Lyre</h1>
+
+<p>Root-mode build packet scaffold for a small plucked lyre, aligned with the</p>
+<p>instrument-maker v4.3 Mode A packet shape.</p>
+
+<h2>Readiness</h2>
+
+<p>L2 scaffold. The packet now has a design basis, first-pass string assumptions,</p>
+<p>BOM, sourcing, cut list, validation plan, risks, photo plan, drawing brief,</p>
+<p>CAD notes, and Wolfram starter. It is not L3 because no shop prototype,</p>
+<p>measured tuning data, rendered CAD, sourceability check, or string-load proof</p>
+<p>has been completed.</p>
+
+<h2>Packet Contents</h2>
+
+<ul>
+<li>`design.md` - design intent, physics model, assumptions, and known gaps.</li>
+<li>`bom.csv` - first-pass parts and estimated costs.</li>
+<li>`sourcing.csv` - source specifications and search terms.</li>
+<li>`cut-list.csv` - rough and final stock plan.</li>
+<li>`validation.csv` - tuning, load, ergonomic, and finish checks.</li>
+<li>`assembly-manual.md` - staged build notes for the first prototype.</li>
+<li>`drawing-brief.md` and `drawings/README.md` - drawing starter notes.</li>
+<li>`cad/README.md` - CAD starter notes.</li>
+<li>`wolfram-starter.wl` and `wolfram/README.md` - string model starter.</li>
+<li>`risks.md` - safety, structural, sourcing, and readiness risks.</li>
+<li>`photo-shotlist.md` - documentation image plan.</li>
+</ul>
+
+<h2>String-Scale Assumptions</h2>
+
+<p>Baseline: 10 strings, C4 through E5 diatonic, 21 in nominal speaking length</p>
+<p>for the mid strings, nylon or fluorocarbon monofilament, and a conservative</p>
+<p>prototype target below 70 percent of estimated breaking load. The exact gauge</p>
+<p>schedule remains a validation task.</p>
+
+<h2>License</h2>
+
+<p>[CC BY 4.0](LICENSE) - see LICENSE for details.</p>
+
+<div class="page-break"></div>
+
+<h2>photo-shotlist.md</h2>
+
+<p>Project artifact.</p>
+
+<h1>Photo Shotlist</h1>
+
+<ul>
+<li>Orthographic front view of full-size layout before cutting.</li>
+<li>Close-up of grain direction through arms and yoke.</li>
+<li>Pin pilot-hole test block with bit sizes labeled.</li>
+<li>Dry-fit frame before glue.</li>
+<li>Bridge and nut blank before and after slotting.</li>
+<li>First stringing with safety setup visible.</li>
+<li>Tuner readings for all 10 strings after 24 hour settle.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>risks.md</h2>
+
+<p>Project artifact.</p>
+
+<h1>Lyre Risks</h1>
+
+<h2>Safety</h2>
+
+<ul>
+<li>String breakage during first pitch-up can injure eyes or hands.</li>
+<li>Tuning pins may release suddenly if pilot holes are oversized.</li>
+</ul>
+
+<h2>Structural</h2>
+
+<ul>
+<li>The yoke and arms carry the full string load and must avoid short-grain</li>
+</ul>
+<p>  failure.</p>
+<ul>
+<li>Soundboard thickness is not validated; excessive bridge load may crown or</li>
+</ul>
+<p>  crack the board.</p>
+
+<h2>Acoustic</h2>
+
+<ul>
+<li>Gauge schedule is not measured yet, so tone balance may be uneven.</li>
+<li>Bridge and nut slot quality can dominate sustain and string life.</li>
+</ul>
+
+<h2>Sourcing</h2>
+
+<ul>
+<li>Live prices, availability, and lead times are not checked.</li>
+<li>Fishing-line substitutions are risky unless density and breaking strength are</li>
+</ul>
+<p>  documented.</p>
+
+<h2>Readiness</h2>
+
+<p>Remain at L2 until the CAD layout, string schedule, and first prototype</p>
+<p>validation rows are complete.</p>
+</body></html>
