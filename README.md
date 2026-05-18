@@ -13,6 +13,8 @@ has been completed.
 
 ## Packet Contents
 
+- `explorer.html` - studio overview linking the packet evidence, validation gates,
+  print packet, Wolfram starter, CAD/drawing queues, and learn-to-play material.
 - `design.md` - design intent, physics model, assumptions, and known gaps.
 - `bom.csv` - first-pass parts and estimated costs.
 - `sourcing.csv` - source specifications and search terms.
