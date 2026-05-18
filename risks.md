@@ -11,6 +11,8 @@
   failure.
 - Soundboard thickness is not validated; excessive bridge load may crown or
   crack the board.
+- Arm-to-yoke joinery and pin-row edge distance are not yet backed by a reviewed
+  drawing or proof-load coupon.
 
 ## Acoustic
 
@@ -25,5 +27,6 @@
 
 ## Readiness
 
-Remain at L2 until the CAD layout, string schedule, and first prototype
-validation rows are complete.
+Remain at prototype-planning scaffold status until the CAD layout, string
+schedule, bridge/soundboard load register, and first prototype validation rows
+are complete.

@@ -9,8 +9,8 @@ two arms, a crossbar/yoke, and individual tuning pins.
 
 ## Readiness
 
-L2 scaffold. This is suitable for design review, sourcing review, and first CAD
-layout. It is not ready for unattended fabrication.
+Prototype-planning scaffold. This is suitable for design review, sourcing
+review, and first CAD layout. It is not ready for unattended fabrication.
 
 ## Governing Model
 
@@ -22,8 +22,8 @@ mu = density * pi * (diameter / 2)^2
 ```
 
 Use A4 = 440 Hz equal temperament for targets. Treat all string tensions as
-first-order estimates until the actual string material, gauge, and measured
-density are recorded.
+unknown until the actual string material, gauge, and measured or supplier
+density/breaking strength are recorded in `string-schedule.csv`.
 
 ## Baseline Assumptions
 
@@ -36,6 +36,29 @@ density are recorded.
 | Frame stock | 0.75 in hardwood | Grain must run continuously through arms where possible |
 | Tuning hardware | Zither pins | Pilot holes and pin torque need validation |
 | Target total tension | 80-120 lbf | Design frame with margin before stringing |
+
+## String Schedule Boundary
+
+`string-schedule.csv` names the C4-E5 target set and holds the fields that must
+be resolved before the frame is treated as structurally reviewed:
+
+- `gauge_or_diameter_in`
+- `linear_density_source`
+- `estimated_tension_lbf`
+- `percent_breaking`
+- `risk_flags`
+
+Rows with `status=TBD` or blank tension fields are placeholders. They are
+useful for layout discussion, but they are not a stringing recipe or a load
+proof.
+
+## Bridge, Soundboard, And Joinery Gates
+
+`bridge-soundboard-load-register.csv` is the load-path checklist for the first
+prototype. It keeps bridge downbearing, soundboard deflection, pin hold,
+crossbar/yoke grain direction, and arm-to-yoke joinery visible as separate
+gates. Do not drill final pin holes, cut final bridge/nut slots, or publish CNC
+toolpaths until these rows have measured or reviewed evidence.
 
 ## Tension Safety Notes
 
@@ -51,5 +74,6 @@ density are recorded.
 - No measured string-gauge schedule yet.
 - No CAD frame deflection check yet.
 - No bridge downbearing measurement yet.
+- No joinery load-path drawing or proof-load coupon yet.
 - No supplier price or stock verification yet.
 - No prototype tuning data.
