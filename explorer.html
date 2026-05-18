@@ -381,11 +381,11 @@ mark.hit{background:var(--gold);color:var(--ink);
 
   <div class="status-row">
     <div class="status-label">Focus</div>
-    <div class="status-val"><span class="strong">Root-mode L2 scaffold for design review, sourcing review, and first CAD layout</span></div>
+    <div class="status-val"><span class="strong">Prototype-planning scaffold for design review, sourcing review, string schedule review, and first CAD layout</span></div>
   </div>
   <div class="status-row">
     <div class="status-label">Status</div>
-    <div class="status-val"><span class="pill pill-private">Private review</span>&nbsp;&nbsp;<span class="pill pill-block">Public-release blocked</span> Packet version <span class="strong">instrument-maker v4.4.8 explorer refresh</span></div>
+    <div class="status-val"><span class="pill pill-private">Private review</span>&nbsp;&nbsp;<span class="pill pill-block">Public-release blocked</span> Packet version <span class="strong">instrument-maker v4.4.8 explorer refresh plus Round 31 load gates</span></div>
   </div>
   <div class="status-row">
     <div class="status-label">Family</div>
@@ -393,21 +393,21 @@ mark.hit{background:var(--gold);color:var(--ink);
   </div>
   <div class="status-row">
     <div class="status-label">Release gates</div>
-    <div class="status-val"><ul class="gates"><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">Calculated gauge schedule using measured or supplier-provided density and breaking strength.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">Scrap-block tuning pin torque and creep test.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">CAD or full-size drawing showing string fan, yoke, bridge, nut, loaded grain direction, and pin row.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">First pitch-up log showing frame movement and tuning drift after 24 hours.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">Prototype photos that match the photo shotlist.</span></li></ul></div>
+    <div class="status-val"><ul class="gates"><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">Calculated gauge schedule using measured or supplier-provided density and breaking strength.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">String schedule filled with selected gauges, estimated tensions, percent breaking, and risk flags.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">Bridge/soundboard/yoke load register filled with reviewed or measured evidence.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">Scrap-block tuning pin torque and creep test.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">CAD or full-size drawing showing string fan, yoke, bridge, nut, soundboard patch, joinery, loaded grain direction, and pin row.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">First pitch-up log showing frame movement and tuning drift after 24 hours.</span></li><li class="gate"><span class="gate-dot block" title="Open"></span><span class="gate-label">Prototype photos that match the photo shotlist.</span></li></ul></div>
   </div>
 </article>
 
 <section id="overview" data-toc="Overview" data-toc-group="Project">
   <h1><span class="eyebrow">01 · Overview</span>Lyre studio explorer</h1>
   <figure class="hero-media"><img src="images/P-Lyre-Harp-1200x1200-1_1080xinspiration.webp" alt="Lyre inspiration reference"></figure>
-  <p>This explorer gathers the lyre root packet into a reviewable studio surface: design intent, string-load assumptions, BOM and sourcing placeholders, validation gates, Wolfram starter math, CAD/drawing queues, print packet exports, and the starter songbook.</p>
+  <p>This explorer gathers the lyre root packet into a reviewable studio surface: design intent, string-load assumptions, string schedule placeholders, bridge and soundboard load gates, BOM and sourcing placeholders, validation gates, Wolfram starter math, CAD/drawing queues, print packet exports, and the starter songbook.</p>
   <div class="callout warn"><span class="lab">Readiness boundary</span>
-    <p>The packet is an L2 scaffold for design review and first CAD layout. It does not yet claim measured tuning data, reviewed CAD authority, a source-verified gauge schedule, or a shop-validated frame under string load.</p>
+    <p>The packet is a prototype-planning scaffold for design review and first CAD layout. It does not yet claim measured tuning data, reviewed CAD authority, a source-verified gauge schedule, or a shop-validated frame under string load.</p>
   </div>
   <div class="cards">
     <div class="card"><div class="k">Start here</div><div class="v">design.md<span class="sub">intent, Mersenne-Taylor string model, assumptions, and known gaps</span></div><p style="margin-top:8px"><a href="design.md" target="_blank" rel="noopener">Open</a></p></div>
     <div class="card"><div class="k">Bench packet</div><div class="v">print-packet.pdf<span class="sub">offline review copy generated from the packet artifacts</span></div><p style="margin-top:8px"><a href="print-packet.pdf" target="_blank" rel="noopener">Open PDF</a> · <a href="print-packet.html" target="_blank" rel="noopener">Open HTML</a></p></div>
-    <div class="card"><div class="k">Next unlock</div><div class="v">validation.csv<span class="sub">gauge schedule, tuning-pin torque, frame deflection, and 24-hour pitch-up evidence remain TBD</span></div><p style="margin-top:8px"><a href="validation.csv" target="_blank" rel="noopener">Open</a></p></div>
+    <div class="card"><div class="k">Next unlock</div><div class="v">string-schedule.csv<span class="sub">selected gauges, tensions, percent breaking, and risk flags remain TBD</span></div><p style="margin-top:8px"><a href="string-schedule.csv" target="_blank" rel="noopener">Open</a></p></div>
   </div>
 </section>
 
@@ -417,8 +417,20 @@ mark.hit{background:var(--gold);color:var(--ink);
 <div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">bom.csv</span><span class="file-type">CSV</span><span class="file-desc">Dimension or registry table</span><span class="file-actions"><a href="bom.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="bom.csv"></div></div>
 <div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">cut-list.csv</span><span class="file-type">CSV</span><span class="file-desc">Dimension or registry table</span><span class="file-actions"><a href="cut-list.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="cut-list.csv"></div></div>
 <div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">sourcing.csv</span><span class="file-type">CSV</span><span class="file-desc">Dimension or registry table</span><span class="file-actions"><a href="sourcing.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="sourcing.csv"></div></div>
+<div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">string-schedule.csv</span><span class="file-type">CSV</span><span class="file-desc">Target pitches, gauge placeholders, and tension gates</span><span class="file-actions"><a href="string-schedule.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="string-schedule.csv"></div></div>
+<div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">bridge-soundboard-load-register.csv</span><span class="file-type">CSV</span><span class="file-desc">Bridge, soundboard, yoke, pin, and joinery load gates</span><span class="file-actions"><a href="bridge-soundboard-load-register.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="bridge-soundboard-load-register.csv"></div></div>
+<div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">visual-output-register.csv</span><span class="file-type">CSV</span><span class="file-desc">Visual authority and non-authority register</span><span class="file-actions"><a href="visual-output-register.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="visual-output-register.csv"></div></div>
 <div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">validation.csv</span><span class="file-type">CSV</span><span class="file-desc">Dimension or registry table</span><span class="file-actions"><a href="validation.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="validation.csv"></div></div>
 
+</section>
+
+<section id="string-load" data-toc="String &amp; Load Gates" data-toc-group="Design">
+  <h1><span class="eyebrow">· String and Load Gates</span>Schedule · Bridge · Soundboard · Joinery</h1>
+  <div class="callout block"><span class="lab">Evidence-bound load claims</span>
+    <p>The target notes are listed, but gauge, tension, percent-breaking, bridge downbearing, soundboard deflection, and joinery proof remain measurement-required. These files are gates, not a final stringing recipe.</p>
+  </div>
+<div class="file open"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">string-schedule.csv</span><span class="file-type">CSV</span><span class="file-desc">C4-E5 target schedule and unresolved gauge/tension fields</span><span class="file-actions"><a href="string-schedule.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="string-schedule.csv"></div></div>
+<div class="file open"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">bridge-soundboard-load-register.csv</span><span class="file-type">CSV</span><span class="file-desc">Bridge, soundboard, pin, yoke, and joinery gates</span><span class="file-actions"><a href="bridge-soundboard-load-register.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="bridge-soundboard-load-register.csv"></div></div>
 </section>
 
 <section id="cad" data-toc="CAD & Drawings Queue" data-toc-group="Project">
@@ -459,6 +471,7 @@ mark.hit{background:var(--gold);color:var(--ink);
 <section id="validation" data-toc="Validation Gates" data-toc-group="Validate">
   <h1><span class="eyebrow">· Validation Gates</span>Validation Gates</h1>
 <div class="file open"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">validation.csv</span><span class="file-type">CSV</span><span class="file-desc">Checks · methods · tolerances · gates</span><span class="file-actions"><a href="validation.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="validation.csv"></div></div>
+<div class="file"><div class="file-head" onclick="toggleFile(this)"><span class="icon">▶</span><span class="file-name">visual-output-register.csv</span><span class="file-type">CSV</span><span class="file-desc">Reference/render outputs marked non-authority</span><span class="file-actions"><a href="visual-output-register.csv" target="_blank" rel="noopener">Open</a></span></div><div class="file-body" data-csv="visual-output-register.csv"></div></div>
 </section>
 
 <section id="run-it" data-toc="Run It — Wolfram Cloud" data-toc-group="Validate">

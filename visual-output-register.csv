@@ -1,0 +1,5 @@
+artifact_id,path,artifact_kind,role,authority,derived_from,dimension_claim,fabrication_required,notes
+IMG-001,images/P-Lyre-Harp-1200x1200-1_1080xinspiration.webp,photo_reference,photo_reference,reference_only,,none,false,"Inspiration/reference image only; does not control string scale, bridge placement, soundboard thickness, joinery, or toolpaths."
+HTML-001,explorer.html,render_preview,story,concept_only,,none,false,"Studio review surface for packet navigation; not fabrication authority."
+PDF-001,print-packet.pdf,render_preview,story,concept_only,,none,false,"Printable packet export for review; dimensions remain subject to string schedule and drawing authority gates."
+PPT-001,capstone-deck.pptx,render_preview,story,concept_only,,none,false,"Presentation export only; does not control fabrication geometry."

@@ -2,8 +2,8 @@
   "title": "Lyre Studio Explorer",
   "instrument": "Lyre",
   "build_target": "Compact 10-string plucked lyre",
-  "artifact_focus": "Root-mode L2 scaffold for design review, sourcing review, and first CAD layout",
-  "packet_version": "instrument-maker v4.4.8 explorer refresh",
+  "artifact_focus": "Prototype-planning scaffold for design review, sourcing review, string schedule review, and first CAD layout",
+  "packet_version": "instrument-maker v4.4.8 explorer refresh plus Round 31 load gates",
   "release_status": "private review",
   "family_members": [
     "lyre",
@@ -15,8 +15,10 @@
     "public_candidate": false,
     "required_before_public": [
       "Calculated gauge schedule using measured or supplier-provided density and breaking strength.",
+      "String schedule filled with selected gauges, estimated tensions, percent breaking, and risk flags.",
+      "Bridge/soundboard/yoke load register filled with reviewed or measured evidence.",
       "Scrap-block tuning pin torque and creep test.",
-      "CAD or full-size drawing showing string fan, yoke, bridge, nut, loaded grain direction, and pin row.",
+      "CAD or full-size drawing showing string fan, yoke, bridge, nut, soundboard patch, joinery, loaded grain direction, and pin row.",
       "First pitch-up log showing frame movement and tuning drift after 24 hours.",
       "Prototype photos that match the photo shotlist."
     ]
@@ -26,6 +28,9 @@
     "design.md",
     "bom.csv",
     "sourcing.csv",
+    "string-schedule.csv",
+    "bridge-soundboard-load-register.csv",
+    "visual-output-register.csv",
     "cut-list.csv",
     "drawing-brief.md",
     "drawings/README.md",
@@ -45,6 +50,12 @@
     "risks.md",
     "learn-to-play/README.md"
   ],
+  "measurement_capture": {
+    "string_schedule": "string-schedule.csv",
+    "bridge_soundboard_load_register": "bridge-soundboard-load-register.csv",
+    "validation_gates": "validation.csv",
+    "visual_authority_register": "visual-output-register.csv"
+  },
   "engineering": {
     "wolfram": [
       {
@@ -68,6 +79,13 @@
         "kind": "drawing-starter-notes",
         "status": "dimensioned drawing pending"
       }
+    ],
+    "visual_outputs": [
+      {
+        "source_file": "visual-output-register.csv",
+        "kind": "visual-authority-register",
+        "status": "reference and review outputs only; no fabrication authority declared"
+      }
     ]
   },
   "outputs": {
@@ -80,6 +98,6 @@
   },
   "notes": [
     "Explorer pages are documentation surfaces; fabrication authority remains in reviewed design tables, CAD/DXF/drawings, measured data, and validation logs.",
-    "This packet remains L2 until the required-before-public evidence is collected."
+    "This packet remains a prototype-planning scaffold until the required-before-public evidence is collected."
   ]
 }
