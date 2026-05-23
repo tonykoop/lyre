@@ -1,0 +1,16 @@
+{
+  "project": "lyre",
+  "mode": "instrument-maker Mode A",
+  "generated_outputs": {
+    "capstone-deck-md": "capstone-deck.md",
+    "print-packet-md": "print-packet.md",
+    "print-packet-html": "print-packet.html",
+    "site": "site/index.html"
+  },
+  "skipped_binary_outputs": [
+    "capstone-deck.pptx",
+    "print-packet.pdf",
+    "lyre-design-table.xlsx"
+  ],
+  "reason": "Current environment generated markdown/html/csv fallbacks instead of binary deliverables."
+}

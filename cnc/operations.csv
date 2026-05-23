@@ -1,0 +1,7 @@
+operation_id,stage,part_or_fixture,operation,datum,tooling_or_process,notes
+CNC-001,coupon,soundboard test coupon,inlay pocket depth test,Datum A,small engraving bit,Validate shallow inlay mass and line width.
+CNC-002,fixture,yoke drill fixture,peg-hole drilling fixture,Datum C,router or drill guide fixture,Supports repeatable peg spacing and angle.
+CNC-003,fixture,joinery test block,arm socket joinery coupon,Datum A/B,router and drill operations,Compare round tenon drawbore and collar approaches.
+CNC-004,prototype,bridge blank,bridge roughing profile,Datum A,small end mill plus hand finish,Cut two heights for A/B comparison.
+CNC-005,prototype,tailpiece blank,tailpiece roughing profile,Datum B,end mill plus hand finish,Keep pickup-ready option reversible.
+CNC-006,ornament,side/back sample board,Broinwood-style relief sample,local fixture datum,ball nose or V-bit sample,Do not commit to body until sample board succeeds.

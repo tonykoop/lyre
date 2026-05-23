@@ -1,0 +1,9 @@
+part_id,part_name,material,qty,rough_length_mm,rough_width_mm,rough_thickness_mm,process,notes
+CUT-001,soundbox shell blank,walnut or cherry,1,500,380,140,carve or laminate,Allow extra stock for bowl shaping and lap interface tests.
+CUT-002,soundboard blank,spruce,1,460,340,6,resaw and thickness,Finish thickness after voicing tests.
+CUT-003,left arm blank,maple or mulberry,1,420,35,35,turn or shape,Leave extra for tenon and yoke saddle refinement.
+CUT-004,right arm blank,maple or mulberry,1,420,35,35,turn or shape,Match left arm process.
+CUT-005,yoke blank,maple or mulberry,1,340,40,40,turn or shape,Extra length for finial studies.
+CUT-006,bridge blank,dark hardwood,2,150,25,25,shape,One spare for alternate height.
+CUT-007,tailpiece blank,hardwood,2,120,30,20,shape,One spare for pickup-ready variant.
+CUT-008,stand stock,hardwood,1,500,150,25,mill and join,Stand is likely the first visible joinery showcase.

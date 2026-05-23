@@ -1,0 +1,15 @@
+item_id,assembly,part_name,material_or_type,qty,prototype_priority,notes
+BOM-001,body,soundbox shell,walnut or cherry,1,high,Carved or laminated shell depending process decision.
+BOM-002,body,soundboard,spruce,1,high,Keep clean active bridge field.
+BOM-003,frame,left arm,maple or mulberry,1,high,Round section with joinery feature.
+BOM-004,frame,right arm,maple or mulberry,1,high,Mirror or near-mirror of left arm.
+BOM-005,frame,yoke,maple or mulberry,1,high,Cylindrical crossbar with peg holes and lashing grooves.
+BOM-006,hardware,friction pegs,ebony rosewood or mulberry,13,high,Prototype may use simplified turned pegs.
+BOM-007,hardware,bridge,dark hardwood plus pale saddle,1,high,Test several bridge heights.
+BOM-008,hardware,tailpiece or lower anchor,mixed hardwood and pins,1,high,Allow reversible pickup and strap planning.
+BOM-009,finish,lashing cord,black waxed linen or leather,2,medium,Visible historical cue.
+BOM-010,ergonomics,thigh pad,leather felt cork composite,1,medium,Optional removable interface.
+BOM-011,electro-acoustic,pickup,contact transducer or miniature internal system,1,medium,Only for pickup-ready variant.
+BOM-012,mobility,lightweight strap,leather or woven textile,1,low,Optional removable accessory.
+BOM-013,display,stand or cradle,hardwood,1,medium,Best place for visible joinery flourish.
+BOM-014,ornament,inlay veneer and wire set,holly ebony brass abalone,1,medium,Reserve most aggressive art for side back and stand.

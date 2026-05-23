@@ -1,0 +1,204 @@
+'====================================================================
+'  LYR-000 Master Equations - SolidWorks External File
+'  Units: inches (1 in = 25.4 mm exactly)
+'  Status: first-pass concept targets, not measured fabrication values
+'  Last edit: 2026-05-17
+'====================================================================
+'
+'  CONFIGURATION ANCHOR - LYR-13-WANDERER
+'
+"string_count" = 13
+"overall_height_in" = 28.94
+"body_width_in" = 12.40
+"body_height_in" = 16.93
+"bowl_depth_in" = 4.72
+"yoke_clear_span_in" = 10.04
+"string_spacing_in" = 0.551
+"body_scale_factor" = 1.000
+'
+'  FAMILY VARIANT CODES
+'  arm_joinery_code: 1 round_tenon_wedge, 2 hidden_drawbore, 3 keyed_collar
+'  yoke_joinery_code: 1 saddle_lash_only, 2 saddle_plus_pin, 3 saddle_plus_hidden_key
+'  shell_build_code: 1 carved_shell, 2 laminated_shell, 3 staved_shell
+'
+"arm_joinery_code" = 1
+"yoke_joinery_code" = 3
+"shell_build_code" = 1
+'
+'  DERIVED SCALE
+'
+"scale_factor" = "overall_height_in" / 28.94
+"string_field_width_in" = ( "string_count" - 1 ) * "string_spacing_in"
+"outer_string_margin_in" = ( "yoke_clear_span_in" - "string_field_width_in" ) / 2
+'
+'  BOWL / SOUNDBOX
+'
+"shell_wall_in" = 0.236
+"soundboard_thickness_in" = 0.110
+"soundboard_rim_lip_in" = 0.250
+"bowl_roundover_in" = 0.375
+"bowl_foot_flat_width_in" = 1.250
+'
+'  THIGH SADDLE / LAP INTERFACE
+'
+"thigh_saddle_enabled" = 1
+"thigh_saddle_radius_in" = 2.650
+"thigh_saddle_width_in" = 3.500
+"thigh_saddle_depth_in" = 0.180
+"thigh_saddle_x_offset_in" = -1.350
+"thigh_saddle_y_from_lower_in" = 1.950
+"thigh_pad_thickness_in" = 0.125
+"thigh_pad_durometer_shore_a" = 45
+"seated_tilt_angle_deg" = 16.0
+"lap_contact_patch_len_in" = 2.750
+'
+'  LEFT-HAND / NON-DOMINANT WRIST INTERFACE
+'
+"left_hand_relief_enabled" = 1
+"left_hand_relief_radius_in" = 1.500
+"left_hand_relief_width_in" = 2.750
+"left_hand_relief_depth_in" = 0.120
+"back_edge_bevel_deg" = 22.0
+"back_edge_roundover_in" = 0.180
+"left_thumb_register_y_in" = 12.200
+'
+'  SOUNDHOLE
+'
+"soundhole_dia_in" = 1.850
+"soundhole_x_offset_in" = 2.100
+"soundhole_y_from_lower_in" = 10.900
+"soundhole_rosette_width_in" = 0.125
+'
+'  ARMS
+'
+"arm_dia_in" = 0.945
+"arm_socket_depth_in" = 1.500
+"arm_bottom_span_in" = 8.700
+"arm_top_span_in" = 12.250
+"arm_lean_deg" = 7.0
+"arm_visible_len_in" = "overall_height_in" - "body_height_in" + 3.000
+"arm_tenon_dia_in" = 0.700
+"arm_tenon_len_in" = 1.250
+"arm_wedge_key_thk_in" = 0.125
+"arm_drawbore_pin_dia_in" = 0.156
+"arm_shoulder_block_thk_in" = 0.600
+'
+'  YOKE / CROSSBAR
+'
+"yoke_dia_in" = 1.125
+"yoke_finial_len_in" = 1.300
+"yoke_total_len_in" = "yoke_clear_span_in" + 2 * "yoke_finial_len_in"
+"yoke_center_z_in" = "overall_height_in" - 1.000
+"yoke_saddle_depth_in" = 0.125
+"lashing_groove_width_in" = 0.100
+"lashing_wrap_count" = 4
+"torii_endcap_step_in" = 0.180
+"torii_endcap_dia_in" = 1.240
+'
+'  PEGS
+'
+"peg_hole_dia_in" = 0.250
+"peg_hole_angle_deg" = 5.0
+"peg_head_width_in" = 0.650
+"peg_head_thickness_in" = 0.400
+"peg_stagger_in" = 0.280
+"peg_row_yoke_offset_in" = 0.000
+'
+'  STRING PLANE - STRING 1 IS LOWEST/BASS, STRING 13 HIGHEST/TREBLE
+'
+"speaking_len_mid_in" = 21.500
+"speaking_len_delta_in" = 2.000
+"bridge_y_from_lower_in" = 4.250
+"bridge_height_in" = 0.875
+"bridge_foot_width_in" = 0.500
+"bridge_saddle_width_in" = 0.080
+"bridge_saddle_radius_in" = 18.000
+"tailpiece_y_from_lower_in" = 1.100
+"tailpiece_pin_dia_in" = 0.080
+"tailpiece_bar_dia_in" = 0.125
+"target_break_angle_deg" = 7.0
+'
+'  PICKUP / ELECTRO-ACOUSTIC OPTION
+'
+"pickup_ready_enabled" = 1
+"pickup_pad_dia_in" = 0.625
+"pickup_mount_y_from_lower_in" = 3.400
+"pickup_mount_x_offset_in" = 1.800
+"jack_block_len_in" = 1.250
+"jack_block_width_in" = 0.750
+"jack_block_thk_in" = 0.500
+'
+'  STRAP OPTION
+'
+"strap_enabled" = 1
+"upper_strap_anchor_y_in" = 14.750
+"lower_strap_anchor_y_in" = 1.600
+"strap_anchor_clear_dia_in" = 0.180
+"strap_anchor_edge_margin_in" = 0.500
+'
+'  13-STRING CHROMATIC TUNING - E4 TO E5
+'
+"f1_hz" = 329.63
+"f2_hz" = 349.23
+"f3_hz" = 369.99
+"f4_hz" = 392.00
+"f5_hz" = 415.30
+"f6_hz" = 440.00
+"f7_hz" = 466.16
+"f8_hz" = 493.88
+"f9_hz" = 523.25
+"f10_hz" = 554.37
+"f11_hz" = 587.33
+"f12_hz" = 622.25
+"f13_hz" = 659.25
+'
+'  NEAR-EQUAL LYRE SPEAKING LENGTHS - LOW STRINGS SLIGHTLY LONGER
+'
+"L1_in" = "speaking_len_mid_in" + "speaking_len_delta_in" / 2
+"L2_in" = "speaking_len_mid_in" + "speaking_len_delta_in" * 5 / 12
+"L3_in" = "speaking_len_mid_in" + "speaking_len_delta_in" * 4 / 12
+"L4_in" = "speaking_len_mid_in" + "speaking_len_delta_in" * 3 / 12
+"L5_in" = "speaking_len_mid_in" + "speaking_len_delta_in" * 2 / 12
+"L6_in" = "speaking_len_mid_in" + "speaking_len_delta_in" * 1 / 12
+"L7_in" = "speaking_len_mid_in"
+"L8_in" = "speaking_len_mid_in" - "speaking_len_delta_in" * 1 / 12
+"L9_in" = "speaking_len_mid_in" - "speaking_len_delta_in" * 2 / 12
+"L10_in" = "speaking_len_mid_in" - "speaking_len_delta_in" * 3 / 12
+"L11_in" = "speaking_len_mid_in" - "speaking_len_delta_in" * 4 / 12
+"L12_in" = "speaking_len_mid_in" - "speaking_len_delta_in" * 5 / 12
+"L13_in" = "speaking_len_mid_in" - "speaking_len_delta_in" / 2
+'
+'  STRING X POSITIONS ON BRIDGE/YOKE, CENTERED ON INSTRUMENT CENTERLINE
+'
+"s1_x_in" = - "string_field_width_in" / 2
+"s2_x_in" = "s1_x_in" + 1 * "string_spacing_in"
+"s3_x_in" = "s1_x_in" + 2 * "string_spacing_in"
+"s4_x_in" = "s1_x_in" + 3 * "string_spacing_in"
+"s5_x_in" = "s1_x_in" + 4 * "string_spacing_in"
+"s6_x_in" = "s1_x_in" + 5 * "string_spacing_in"
+"s7_x_in" = "s1_x_in" + 6 * "string_spacing_in"
+"s8_x_in" = "s1_x_in" + 7 * "string_spacing_in"
+"s9_x_in" = "s1_x_in" + 8 * "string_spacing_in"
+"s10_x_in" = "s1_x_in" + 9 * "string_spacing_in"
+"s11_x_in" = "s1_x_in" + 10 * "string_spacing_in"
+"s12_x_in" = "s1_x_in" + 11 * "string_spacing_in"
+"s13_x_in" = "s1_x_in" + 12 * "string_spacing_in"
+'
+'  INLAY - TORTOISE STAR MAP / TORII LATTICE / BROINWOOD SIDE FIELDS
+'
+"inlay_pocket_depth_in" = 0.035
+"inlay_line_width_in" = 0.035
+"tortoise_scute_line_count" = 7
+"acoustic_contour_count" = 9
+"star_dot_dia_in" = 0.125
+"kumiko_band_width_in" = 0.375
+"kumiko_line_width_in" = 0.030
+"side_relief_max_depth_in" = 0.090
+'
+'  STAND / CRADLE
+'
+"stand_height_in" = 8.000
+"stand_cradle_radius_in" = 2.500
+"stand_base_len_in" = 12.000
+"stand_base_width_in" = 5.000
+"stand_joinery_key_thk_in" = 0.250

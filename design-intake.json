@@ -1,0 +1,31 @@
+{
+  "skill": "instrument-maker",
+  "version": "4.4.5",
+  "packet_mode": "Mode A",
+  "project_name": "Lyre",
+  "instrument_family": "ancient Greek yoke lyre / chelys-inspired string instrument",
+  "primary_build_id": "LYR-13-WANDERER",
+  "design_goal": "Create an original historically informed 13-string Greek yoke lyre with top-down SolidWorks parametric control, family-aware variants, Japanese joinery influence, torii-inspired yoke language, Broinwood-style inlay, ergonomic seated play support, and optional pickup/strap accommodations.",
+  "historical_stance": "Historically informed rather than literal reconstruction. Preserve ancient Greek architecture and material language while being explicit about modernized string count, hidden structure, ergonomics, and repeatable CAD.",
+  "governing_model": "string instrument with near-equal speaking lengths; pitch primarily controlled by tension, gauge, and material",
+  "constraints": [
+    "Do not clone the LUTHIEROS reference instrument.",
+    "Do not use the obsolete lyre-harp image as CAD authority.",
+    "Support future variants with more or fewer strings and larger or smaller body sizes.",
+    "Keep all main CAD dimensions equation-driven.",
+    "Keep unknown measured dimensions explicit."
+  ],
+  "desired_outputs": [
+    "family-spec.csv",
+    "SolidWorks global-equation file",
+    "SolidWorks design-table import starter",
+    "design brief",
+    "reverse-engineering ledger",
+    "BOM, sourcing, cut list",
+    "validation plan",
+    "CNC planning starter",
+    "Wolfram starter",
+    "print packet and build-log fallback files"
+  ],
+  "status": "intake-complete"
+}

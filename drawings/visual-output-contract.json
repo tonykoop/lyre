@@ -1,0 +1,21 @@
+{
+  "project": "lyre",
+  "visual_output_targets": [
+    "drawings/lyre-family-front.dxf",
+    "drawings/lyre-shell-section.dxf",
+    "drawings/lyre-yoke-peg-layout.dxf",
+    "drawings/lyre-bridge-tailpiece-detail.dxf",
+    "drawings/lyre-stand-joinery.dxf"
+  ],
+  "geometry_authority": "DXF",
+  "derived_previews": [
+    "SVG",
+    "PDF"
+  ],
+  "safe_zone_policy": {
+    "soundboard_active_field": "avoid dense ornament and nonessential cut geometry",
+    "side_back_fields": "preferred for deeper Broinwood-style relief exploration",
+    "player_contact_surfaces": "hand-finish after machining"
+  },
+  "status": "starter contract only; geometry not yet emitted"
+}

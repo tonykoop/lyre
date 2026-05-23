@@ -1,0 +1,17 @@
+validation_id,category,test_name,variant,method,pass_criteria,status,notes
+VAL-001,ergonomics,seated stability on left thigh,LYR-13-WANDERER-ERG,play seated at multiple tilt angles,instrument resists sliding and rotation,planned,Compare pad and no-pad.
+VAL-002,ergonomics,right-hand access clearance,all,play front-face patterns,no bridge or body interference,planned,Check plectrum and finger attack.
+VAL-003,ergonomics,left-hand backside reach,ergonomic variants,test damping and plucks from rear,hand can reach strings comfortably,planned,Focus on upper rear edge geometry.
+VAL-004,ergonomics,20-minute thigh comfort,ergonomic variants,seated play duration,no painful hot spots or numbness,planned,Try multiple pad materials.
+VAL-005,structure,yoke deflection at staged tension,mule and main,measure at 50 75 and 100 percent load,deflection remains within acceptable creep target,planned,Needs numeric tolerance later.
+VAL-006,structure,arm socket integrity,mule and main,inspect after string-up,no cracking loosening or rotation,planned,Especially important with hidden joinery.
+VAL-007,acoustics,soundboard damping from lap saddle,ergonomic variants,A B test with and without contact pad,no unacceptable loss of volume or sustain,planned,Record simple audio clips.
+VAL-008,acoustics,bridge and break-angle behavior,all,inspect witness points and tone response,clean speaking start without top overload,planned,Prototype bridge heights.
+VAL-009,electro-acoustic,pickup noise and mounting,ready variants,test amplified output,usable signal without obtrusive hardware,planned,Start with removable contact transducer.
+VAL-010,mobility,strap carry safety,strap-ready variants,carry and gentle standing support,no dangerous rotation or shell stress,planned,Assume transport-first until proven.
+VAL-011,visual,silhouette integrity,all,front-view review,still reads clearly as Greek yoke lyre,planned,Torii language must remain subtle.
+VAL-012,cad,design-table rebuild sanity,all,rebuild each SolidWorks configuration,no missing globals or suppression failures,planned,Run after the first design-table import.
+VAL-013,cad,string-count extensibility,new future variants,duplicate a row and change string_count,new configuration can be added without renaming globals,planned,Verifies family growth path.
+VAL-014,joinery,arm joinery comparison,mule variants,compare three arm socket families,best variant survives load and remains serviceable,planned,Use round_tenon_wedge hidden_drawbore keyed_collar.
+VAL-015,joinery,yoke registration comparison,mule variants,compare yoke seat variants,lashing remains visual while alignment stays stable,planned,Use saddle_lash_only saddle_plus_pin saddle_plus_hidden_key.
+VAL-016,structure,shell construction path,mule variants,compare carved laminated and staved shell assumptions,chosen shell method is buildable and acoustically acceptable,planned,May remain partial until stock is sourced.

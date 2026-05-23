@@ -1,0 +1,10 @@
+item_id,category,target_spec,suggested_vendor_type,status,owner,notes
+SRC-001,soundboard wood,quartersawn spruce luthier billet,acoustic tonewood supplier,research,Tony,Need enough width or joining strategy.
+SRC-002,shell wood,walnut or cherry blocks or laminations,domestic hardwood supplier,research,Tony,Decide carved versus laminated process.
+SRC-003,arm and yoke wood,maple or mulberry clear stock,hardwood supplier,research,Tony,Straight grain and peg-hole integrity matter.
+SRC-004,string set,13-string gut Nylgut or sugarcane candidate set,historical string supplier,research,Tony,Needs tension study support.
+SRC-005,peg blanks,ebony rosewood or mulberry,peg maker or hardwood supplier,research,Tony,Can prototype in cheaper wood.
+SRC-006,pickup option,lightweight acoustic contact transducer,acoustic pickup supplier,research,Tony,Must be reversible and low mass.
+SRC-007,strap hardware,small removable anchor hardware or leather loop solution,acoustic instrument hardware supplier,research,Tony,Avoid visually dominant metal.
+SRC-008,pad materials,leather felt cork or suede stack,craft supplier,research,Tony,Compare comfort and slip resistance.
+SRC-009,inlay package,veneer wire shell dots,CNC and lutherie inlay supplier,research,Tony,Need sample board before final commitment.

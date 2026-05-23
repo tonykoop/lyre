@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #1f1a17;
+  background: linear-gradient(180deg, #f7f1e8 0%, #efe3d2 100%);
+}
+
+.wrap {
+  width: min(900px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, #7e5a3a, #c39a6b);
+  color: #fff8ef;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  max-width: 42rem;
+}
+
+main {
+  padding: 2rem 0 4rem;
+}
+
+section {
+  background: rgba(255, 250, 244, 0.8);
+  border: 1px solid rgba(87, 62, 42, 0.12);
+  border-radius: 16px;
+  padding: 1.2rem 1.3rem;
+  margin: 1rem 0;
+}
+
+a {
+  color: #6d3d17;
+}
