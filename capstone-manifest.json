@@ -39,7 +39,7 @@
     "validation.csv",
     "supplier-rfq.md",
     "visual-bom-brief.md",
-    "wolfram-starter.wl",
+    "lyre-starter.wl",
     "wolfram/README.md",
     "print-packet.md",
     "print-packet.html",
@@ -59,9 +59,9 @@
   "engineering": {
     "wolfram": [
       {
-        "source_file": "wolfram-starter.wl",
+        "source_file": "lyre-starter.wl",
         "cloud_url": "",
-        "cloud_path": "wolfram-starter.wl",
+        "cloud_path": "lyre-starter.wl",
         "kind": "local-wl",
         "permission": "local"
       }

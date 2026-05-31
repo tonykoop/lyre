@@ -28,7 +28,7 @@ This is a prototype-planning scaffold for a compact 10-string plucked lyre. It s
 | `photo-shotlist.md` | Documentation shot list. |
 | `risks.md` | Risk register. |
 | `README.md` | Repository overview. |
-| `wolfram-starter.wl` | Local Wolfram starter. |
+| `lyre-starter.wl` | Local Wolfram starter. |
 
 <div class="page-break"></div>
 
@@ -275,7 +275,7 @@ Drawing queue notes.
 
 Starter folder for lyre drawings. The first deliverable should be a dimensioned
 front elevation tied to `string-schedule.csv`, `design.md`, and
-`wolfram-starter.wl`.
+`lyre-starter.wl`.
 
 Required first views:
 
@@ -468,7 +468,7 @@ check, or string-load proof has been completed.
 - `assembly-manual.md` - staged build notes for the first prototype.
 - `drawing-brief.md` and `drawings/README.md` - drawing starter notes.
 - `cad/README.md` - CAD starter notes.
-- `wolfram-starter.wl` and `wolfram/README.md` - string model starter.
+- `lyre-starter.wl` and `wolfram/README.md` - string model starter.
 - `risks.md` - safety, structural, sourcing, and readiness risks.
 - `photo-shotlist.md` - documentation image plan.
 
@@ -519,7 +519,7 @@ load, detune and revise the structure before continuing.
 
 <div class="page-break"></div>
 
-## wolfram-starter.wl
+## lyre-starter.wl
 
 Local Wolfram starter.
 

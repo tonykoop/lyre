@@ -29,7 +29,7 @@ check, or string-load proof has been completed.
 - `assembly-manual.md` - staged build notes for the first prototype.
 - `drawing-brief.md` and `drawings/README.md` - drawing starter notes.
 - `cad/README.md` - CAD starter notes.
-- `wolfram-starter.wl` and `wolfram/README.md` - string model starter.
+- `lyre-starter.wl` and `wolfram/README.md` - string model starter.
 - `risks.md` - safety, structural, sourcing, and readiness risks.
 - `photo-shotlist.md` - documentation image plan.
 
