@@ -2,7 +2,7 @@
 
 Starter folder for lyre drawings. The first deliverable should be a dimensioned
 front elevation tied to `string-schedule.csv`, `design.md`, and
-`wolfram-starter.wl`.
+`lyre-starter.wl`.
 
 Required first views:
 
