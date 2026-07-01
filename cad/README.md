@@ -19,6 +19,13 @@ Minimum skeleton parameters:
 - `arm_section_width_in`
 - `bridge_patch_length_in`
 
+`lyre.scad` is the current parametric master: string positions and the
+tuning-pin row are derived from `string_count` and the spacing formulas, the
+soundboard/body envelope follows design.md, and the frame arms + yoke carry the
+long-grain load path called out in `bridge-soundboard-load-register.csv`.
+Authority: `pending_measurement` — see `visual-output-register.csv` CAD-001 and
+`mcp-session-log.md`. Renders clean in OpenSCAD.
+
 The CAD model is a source scaffold until `string-schedule.csv` and
 `bridge-soundboard-load-register.csv` have enough evidence to declare a
 reviewed fabrication authority.
