@@ -1,0 +1,34 @@
+{
+  "product": "lyre",
+  "pipeline": "studiopipeline:evolution-pipeline",
+  "stage": "0-intake",
+  "master_revision": "rev-A (pre-commit intake, 2026-07-01)",
+  "generated": "2026-07-01",
+  "cad_masters": [
+    {
+      "path": "cad/lyre.scad",
+      "format": "openscad-source",
+      "sha256": "2760db812c399f69bcfdb16c2e684f71b73a4f6577de3df653686a0123a89dfb",
+      "authority": "pending_measurement",
+      "lossy": false,
+      "notes": "Parametric master; string-count-derived pin row and bridge fan, design.md soundboard/frame envelope."
+    },
+    {
+      "path": "wolfram/lyre-wolfram-model.wl",
+      "format": "wolfram-source",
+      "sha256": "145eb5315f4619b9b6db23ac58eb16c0b32ed22a6a357b40f6f2c7a8e5ce7015",
+      "authority": "derived_preview",
+      "lossy": false,
+      "notes": "Source-only (not executed); L2 string-tension evidence."
+    },
+    {
+      "path": "lyre-starter.wl",
+      "format": "wolfram-source",
+      "sha256": "1a9cea149141bb96cb4b6f20066f80bff7663292689fdae87802266fa6335a4e",
+      "authority": "derived_preview",
+      "lossy": false,
+      "notes": "Starter scaffold; source-only."
+    }
+  ],
+  "notes": "OpenSCAD source is the current master; design authority is design.md + string-schedule.csv (no design-table xlsx for this product). No STEP export yet (SolidWorks export is Windows-side, out of scope this pass). Gate A (Alpha workspace compile) not yet run."
+}

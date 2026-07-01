@@ -3,6 +3,8 @@
 Root-mode build packet scaffold for a small plucked lyre, aligned with the
 instrument-maker packet shape.
 
+**Status:** L2 V5 build-packet candidate
+
 ## Readiness
 
 Prototype-planning scaffold. The packet now has a design basis, first-pass
@@ -28,8 +30,13 @@ check, or string-load proof has been completed.
 - `validation.csv` - tuning, load, ergonomic, and finish checks.
 - `assembly-manual.md` - staged build notes for the first prototype.
 - `drawing-brief.md` and `drawings/README.md` - drawing starter notes.
-- `cad/README.md` - CAD starter notes.
-- `lyre-starter.wl` and `wolfram/README.md` - string model starter.
+- `cad/README.md` and `cad/lyre.scad` - CAD starter notes plus the parametric
+  OpenSCAD master (string-count-derived pin row and bridge fan); authority
+  `pending_measurement`.
+- `lyre-starter.wl`, `wolfram/lyre-wolfram-model.wl`, and `wolfram/README.md` -
+  string tension model starter (source-only, L2 evidence).
+- `evolution/` - evolution-pipeline Stage 0 intake: master manifest,
+  design-intent, and revision register (Gate A not yet run).
 - `risks.md` - safety, structural, sourcing, and readiness risks.
 - `photo-shotlist.md` - documentation image plan.
 
